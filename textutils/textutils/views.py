@@ -1,8 +1,9 @@
 # I have created this views.py file :- sawant98d
 from django.http import HttpResponse
 
-def index(request):
-    return HttpResponse("<h1>Hello welcome page</h1>")
+
+"""
+
 
 def about(request):
     return HttpResponse("<h4>About page</h4>")
@@ -16,3 +17,21 @@ def get_links(request):
         <a href="https://www.adobe.com/">Adobe</a><br/>
     </h1>
     ''')
+"""
+def index(request):
+    return HttpResponse("<h1>Hello welcome page</h1>")
+
+def removepunc(request):
+    return HttpResponse('removepunc')
+
+def capitalizefirst(request):
+    return HttpResponse('capitalizefirst')
+
+def newlineremove(request):
+    return HttpResponse('newlineremove')
+
+def spaceremove(request):
+    return HttpResponse('spaceremove')
+
+def charcount(request):
+    return HttpResponse('charcount')
